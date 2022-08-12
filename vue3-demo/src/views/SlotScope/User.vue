@@ -22,7 +22,7 @@ onBeforeMount(() => {
 })
 </script>
 <template>
-  <div class="w-96 border shadow-md rounded-lg m-10 p-4">
+  <div class="w-96 border shadow-md rounded-lg m-10 p-4" v-if="userinfo != null">
     <div class="text-red-400">
       <slot :id="userId"></slot>
     </div>
@@ -30,4 +30,4 @@ onBeforeMount(() => {
       <slot name="userinfo" :user="userinfo"></slot>
     </div>
   </div>
-</template>
+</template> 

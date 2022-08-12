@@ -77,7 +77,7 @@ const menuList: TreeList[] = [
   <div class="layout-wrapper h-full">
     <Header title="Learn-Vue3" class="fixed w-full h-12 top-0 shadow-md bg-white"></Header>
     <div class="w-full flex mt-12 h-full">
-      <Menu :menuList="menuList" class="min-w-[200px] h-full border-gray-300 border-r"></Menu>
+      <!-- <Menu :menuList="menuList" class="min-w-[200px] h-full border-gray-300 border-r"></Menu> -->
       <Content class="w-full min-h-min"></Content>
     </div>
   </div>
