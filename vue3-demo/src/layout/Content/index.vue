@@ -17,6 +17,7 @@ import { RouterLink, RouterView } from 'vue-router';
       <RouterLink to="/asyncgallery">Async Component</RouterLink>
       <RouterLink to="/teleport">Teleport</RouterLink>
       <RouterLink to="/transition">Transition</RouterLink>
+      <RouterLink to="/keepalive">Keep Alive</RouterLink>
     </nav>
     <hr />
     <RouterView></RouterView>

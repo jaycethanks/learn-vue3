@@ -46,6 +46,11 @@ const router = createRouter({
       component: () => import("../views/AsyncComponent/index.vue"),
     },
     {
+      path: "/keepalive",
+      name: "keepalive",
+      component: () => import("../views/KeepAlive/index.vue"),
+    },
+    {
       path: "/teleport",
       name: "teleport",
       component: () => import("../views/Teleport/index.vue"),
