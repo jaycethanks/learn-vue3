@@ -45,6 +45,11 @@ const router = createRouter({
       name: "asyncgallery",
       component: () => import("../views/AsyncComponent/index.vue"),
     },
+    {
+      path: "/keepalive",
+      name: "keepalive",
+      component: () => import("../views/KeepAlive/index.vue"),
+    },
   ],
 });
 
