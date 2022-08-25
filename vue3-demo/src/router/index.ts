@@ -45,6 +45,16 @@ const router = createRouter({
       name: "asyncgallery",
       component: () => import("../views/AsyncComponent/index.vue"),
     },
+    {
+      path: "/teleport",
+      name: "teleport",
+      component: () => import("../views/Teleport/index.vue"),
+    },
+    {
+      path: "/transition",
+      name: "transition",
+      component: () => import("../views/Transition/index.vue"),
+    },
   ],
 });
 
