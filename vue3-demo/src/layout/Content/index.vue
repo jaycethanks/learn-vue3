@@ -3,7 +3,6 @@ import { useRouter, RouterLink, RouterView } from "vue-router";
 const {
   options: { routes },
 } = useRouter();
-console.log(routes);
 </script>
 
 <template>

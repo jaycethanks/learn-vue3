@@ -1,10 +1,14 @@
-@import './tailwind.css';
+@import "./tailwind.css";
 
 a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
+}
+
+input {
+  border: 1px solid #d6d6d6;
 }
 
 html,

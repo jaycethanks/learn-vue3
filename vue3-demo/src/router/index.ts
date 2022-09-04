@@ -88,8 +88,20 @@ const router = createRouter({
 
       component: () => import("../views/EventNestedComps/index.vue"),
     },
+    {
+      path: "/eventNestedmitt",
+      name: "eventNestedmitt",
+      meta: { desc: 'EventNestedMitt' },
+
+      component: () => import("../views/EventNestedCompsMitt/index.vue"),
+    },
+    {
+      path: "/tsx",
+      name: "tsx",
+      meta: { desc: 'TSX' },
+      component: () => import("../views/TSX/index.vue"),
+    },
 
   ],
 });
-
 export default router;
