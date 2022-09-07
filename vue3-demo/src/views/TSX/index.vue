@@ -1,7 +1,9 @@
 <script lang="ts" setup>
-  import comp from "./";
-  console.log('[comp]: ',comp)
+  import comp from "./Tsx";
+  const handleEmit = (ctx:any)=>{
+    console.log('[ctx]: ',ctx)
+  }
 </script>
 <template>
-<comp :user="{name:'jay',age:18}"/>
+<comp @on-click="handleEmit" :user="{name:'jay',age:18}"/>
 </template>

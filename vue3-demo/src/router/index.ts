@@ -101,7 +101,30 @@ const router = createRouter({
       meta: { desc: 'TSX' },
       component: () => import("../views/TSX/index.vue"),
     },
-
+    {
+      path: "/autoimportplugin",
+      name: "autoimportplugin",
+      meta: { desc: 'AutoImportPlugin' },
+      component: () => import("../views/AutoImportPlugin/index.vue"),
+    },
+    {
+      path: "/v-model",
+      name: "v-model",
+      meta: { desc: 'v-model' },
+      component: () => import("../views/v-model/index.vue"),
+    },
+    {
+      path: "/v-modelMulti",
+      name: "v-modelMulti",
+      meta: { desc: 'v-modelMulti' },
+      component: () => import("../views/v-modelMulti/index.vue"),
+    },
+    {
+      path: "/v-modelModifier",
+      name: "v-modelModifier",
+      meta: { desc: 'v-modelModifier' },
+      component: () => import("../views/v-modelModifier/index.vue"),
+    },
   ],
 });
 export default router;

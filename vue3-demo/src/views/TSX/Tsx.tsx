@@ -6,7 +6,11 @@ const arr = ["a", "b", "c", "d", "e", "f"];
 const handleClick = function (name: any) {
   console.log("[click]: ", "click-->", name);
 };
-const renderDom = (props: any) => {
+const handleClick02 = function (ctx: any) {
+  ctx.emit("on-click", 12456);
+};
+const renderDom = (props: any, ctx: any) => {
+  // props 和 React 一样 通过函数参数接收
   console.log("[props]: ", props);
   return (
     <div>
@@ -32,7 +36,7 @@ const renderDom = (props: any) => {
       {/* v-on 也是不支持的, 而是和 React 一样 */}
       <button onClick={handleClick}>click</button>
       {/* v-on 传参 , bind 返回一个新的函数*/}
-      <button onClick={handleClick.bind(this, name)} name={name}>
+      <button onClick={handleClick02.bind(this, ctx)} name={name}>
         click2
       </button>
       {/* 注意，tsx 不支持事件修饰符 */}
