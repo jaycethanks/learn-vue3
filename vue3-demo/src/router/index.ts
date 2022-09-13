@@ -125,6 +125,19 @@ const router = createRouter({
       meta: { desc: 'v-modelModifier' },
       component: () => import("../views/v-modelModifier/index.vue"),
     },
+    {
+      path: "/directive",
+      name: "directive",
+      meta: { desc: 'Directive' },
+      component: () => import("../views/Directive/index.vue"),
+    },
+    {
+      path: "/Directive_demo_v-drag",
+      name: "Directive_demo_v-drag",
+      meta: { desc: 'Directive_v-drag' },
+      component: () => import("../views/Directive_demo_v-drag/index.vue"),
+    },
+
   ],
 });
 export default router;
